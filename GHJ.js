@@ -75,6 +75,8 @@ if (Bear=="A"||Bear =="E"||Bear =="I"||Bear =="O"||Bear =="U"){
 }
 else if (Bear == "B"||Bear =="C"||Bear =="D"||Bear =="F"||Bear =="G"||Bear =="H"||Bear =="J"||Bear =="K"||Bear =="L"||Bear =="M"||Bear =="N"||Bear =="P"||Bear =="Q"||Bear =="R"||Bear =="S"||Bear =="T"||Bear =="V"||Bear =="X"||Bear =='Z'){
     console.log("Konstant:"+Bear)
+}else{
+    console.log("Other:"+Bear)
 }
 }
 
@@ -119,9 +121,9 @@ function NumberorNot(){
 function month(){
     var Year=prompt("Write in Year:")
     var Month=prompt("Write in Month:")
- if (Year %2==0){
+ if (Year %4==0){
  var January  = 31;
- var February = 28;
+ var February = 29;
  var March  = 31;
  var April = 30;
  var May = 31;
@@ -134,11 +136,11 @@ function month(){
  var December = 31;
 }else{
  var January  = 31;
- var February = 30;
+ var February = 28;
  var March  = 31;
  var April = 30;
  var May = 31;
- var June  = 28;
+ var June  = 30;
  var July = 31;
  var August = 31;
  var September = 30;
@@ -194,7 +196,7 @@ function Biggest(){
     if(num1 >= num2 && num1 >= num3) {
         largest = num1;
     }
-    else if (num2 >= num1 && num2 >= num3) {
+    if (num2 >= num1 && num2 >= num3) {
         largest = num2;
     }
     else {
